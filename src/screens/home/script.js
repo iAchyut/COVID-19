@@ -1,5 +1,4 @@
 
-import $ from 'jquery';
 export function getQue(indexes) {
     var items = ['Where did COVID-19 Outbreak started ?', 'How long is incubation period for COVID-19 ?', 'Which among the following  are not symptons of COVID-19.', 'Which country has most casualty due to COVID-19?', 'Which country has most COVID-19 positive cases ?', 
     'Counties/Area or Territories affected by COVID-19', 'COVID-19 is ', 'COVID-19 is ', 'Cold Weather can kill Coronavirus','Cornovirus can be transmitted through Mosquito bite','Do vaccines against pneumonia protect you against the new coronavirus?'];
@@ -15,9 +14,4 @@ export function getQue(indexes) {
     var opt3 = option3[indexes];
     var opt4 = option4[indexes];
     return { selectedItems, opt1, opt2, opt3, opt4, ans:opt1 };
-  }
-  export function saveResult(opt)
-  {
-    var input = document.getElementById(opt).value;
-    $('result').text(input);
   }
