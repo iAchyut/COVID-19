@@ -1,0 +1,104 @@
+/* TODO move colors to shared css */
+
+.root {
+    display: flex;
+    flex: 1;
+    margin-top: 54px;
+    padding: 12% 10%;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    flex-direction: column;
+}
+
+.questionAnswerContainer {
+    
+    display: flex;
+    flex: 1;
+    padding: 5%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.answerContainer {
+    
+    display: flex;
+    align-self: stretch;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.answerButton {
+    display: flex;
+    flex: 1;
+    max-width: 300px;
+    min-width: 150px;
+    min-height: 20px;
+    border-width: 1px;
+    padding: 7px 10px;
+    border-style: solid;
+    border-radius: 2px;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.answerButton:active{
+    transform: scale(0.9);
+    background-color: darken(#138c91, 5%);
+    box-shadow: 0 2px 25px rgba(255, 145, 0, 0.452);
+  }
+
+/* .answerButton:hover {
+    background: #E1B58B;
+} */
+
+.skipButton {
+    height: 40px;
+    width: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skipButton .skip {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skipButton:hover .skip {
+    color: #E1B58B;
+}
+
+.skipButton:hover .skipIcon {
+    color: #E1B58B;
+}
+
+.rightAnswer {
+    border-color: green;
+    color: green;
+}
+.wrongAnswer {
+    border-color: red;
+    color: red;
+}
