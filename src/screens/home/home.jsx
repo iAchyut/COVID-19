@@ -128,8 +128,8 @@ export default class Home extends Component {
       <div className = {Styles.root}>  
       <p className={Styles.heading}> 
       
-      <a target="_blank" href="https://api.whatsapp.com/send?text=enter message here">Click here to share on Whatsapp</a>
-      
+      <a href="https://web.whatsapp.com/send?l=en&text=https://covid19quiz.netlify.com/">Share this</a>
+
       Being aware is the first step towards being safe. It's the time to save yourself and your loved ones.</p>
         <List />
         <div className = {Styles.container}>
