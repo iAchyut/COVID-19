@@ -20,14 +20,15 @@ export default class Toolbar extends Component {
     const { toggleMenu } = this.props;
     return (
       <header className={Styles.Toolbar}>
-        <div className={Styles1.DrawerToggle} onClick={toggleMenu}>
+         <span className={Styles.website}>COVID19Quiz</span>
+        {/* <div className={Styles1.DrawerToggle} onClick={toggleMenu}>
           <div />
           <div />
           <div />
-        </div>
+        </div> */}
         <p className={Styles1.Title}  ></p> 
         <span className={Styles.versionBox}>
-          <span className={Styles.website}>COVID19Quiz</span>
+         
           
         </span>
         <nav className={Styles.DesktopOnly}>
