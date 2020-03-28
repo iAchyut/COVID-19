@@ -126,7 +126,9 @@ export default class Home extends Component {
     
     return (
       <div className = {Styles.root}>  
-      <p className={Styles.heading}>Being aware is the first step towards being safe. It's the time to save yourself and your loved ones.</p>
+      <p className={Styles.heading}> <a href="whatsapp://send" data-text="Text you want to Share" class="wa_btn wa_btn_s" data-href="URL you want to share" onClick="ga('send', 'event', { eventCategory: 'Social', eventAction: 'Share', eventLabel: 'WhatsAppShare', eventValue: 0});" >
+<button>Share on WhatsApp</button>
+</a>Being aware is the first step towards being safe. It's the time to save yourself and your loved ones.</p>
         <List />
         <div className = {Styles.container}>
           {
