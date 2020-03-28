@@ -4,7 +4,7 @@
     display: flex;
     flex: 1;
     margin-top: 54px;
-    padding: 12% 10%;
+    padding: 5% 10%;
     flex-direction: column;
 }
 
@@ -17,12 +17,12 @@
 }
 
 .questionAnswerContainer {
-    
     display: flex;
     flex: 1;
     padding: 5%;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .question {
@@ -31,24 +31,30 @@
 }
 
 .answerContainer {
-    
     display: flex;
+    padding: 10px 0px;
     align-self: stretch;
-    flex: 1;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .answerButton {
     display: flex;
     flex: 1;
+    outline: none;
     max-width: 300px;
     min-width: 150px;
     min-height: 20px;
     border-width: 1px;
     padding: 7px 10px;
     border-style: solid;
+    background-color: white;
+    border-color: rgba(255, 145, 0, 0.452);
     border-radius: 2px;
+    border-width: 2px;
+    justify-content: center;
+    cursor: pointer;
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
 
     -webkit-touch-callout: none;
@@ -65,17 +71,19 @@
     box-shadow: 0 2px 25px rgba(255, 145, 0, 0.452);
   }
 
-/* .answerButton:hover {
-    background: #E1B58B;
-} */
+.answerButton:hover {
+    background: rgb(248, 222, 197);
+    /* transform: scale(1.1); */
+}
 
 .skipButton {
-    height: 40px;
     width: 65px;
+    height: 35px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10px;
-    margin-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 15px;
     align-items: center;
     cursor: pointer;
 }
@@ -102,6 +110,7 @@
     border-color: red !important;
     color: red;
 }
+
 .button {
     background-color: white;
     color: black;
@@ -123,26 +132,10 @@
     color: white;
   }
 
-  .example_d {
-   
- /* color: #809fff !important; */
- color: #336699;
- text-transform: uppercase;
- background: #ffffff;
- padding: 10px;
- border: 1px solid #336699 ;
- border-radius: 1px;
- display: inline-block;
- transition: all 0.3s ease 0s;
- line-height: 5px;
- width: 230px;
- text-align: center;
-    }
-    
-
-            .beforeClick .example_d:hover {
-            color: #ffffff ;
-            background:#666699;
-            border-color: #666699 ;
-            transition: all 0.4s ease 0s;
-            }
+.optionButtonContainer {
+    display: flex;
+    height: 50px;
+    margin-top: 15px;
+    align-self: stretch;
+    justify-content: center;
+}
