@@ -35,7 +35,7 @@ export default class Test extends Component {
     return (
       <div >
                 <span className = {Styles.question}>
-                  Your Final Score is : {String(currentScore)}
+                  Your Final Score is : {String(currentScore)} / {this.props.totalQuestions}
                 </span>
                 </div>
       

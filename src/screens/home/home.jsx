@@ -12,13 +12,21 @@ import Test from './test';
 import List from './list';
 import { questions } from './script';
 
-
 const Questions = [...questions];
+shuffle(Questions);
 const QuestionsPerTest = 10;
 
 const currentQID = 'current Question Id';
 const score = 'score';
 let timer;
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -99,6 +107,8 @@ export default class Home extends Component {
     this.setState({ isActive: value });
   }
 
+
+
   _returnOptionButtonStyles = (option, answer) => {
     const { isAnswered, selectedOption } = this.state;
     if (isAnswered) {
@@ -121,7 +131,8 @@ export default class Home extends Component {
           {
             isResult ? (
               <div className = {Styles.questionAnswerContainer}>
-                <Test />
+                <Test 
+                 totalQuestions = {QuestionsPerTest}/>
                 <div className = {Styles.optionButtonContainer}>
                         <OptionButton
                           onClick = {this._resetQuestioniare}
