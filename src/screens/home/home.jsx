@@ -112,8 +112,8 @@ export default class Home extends Component {
   _returnOptionButtonStyles = (option, answer) => {
     const { isAnswered, selectedOption } = this.state;
     if (isAnswered) {
-      if (option === answer) return { borderColor: '#1abc9c', color: '#1abc9c' };
-      if (selectedOption === option) return { borderColor: 'red', color: 'red' };
+      if (option === answer) return { borderColor: '#00600f', color: 'white', 'background-color':'#00600f'  };
+      if (selectedOption === option) return { borderColor: '#d32f2f', color: 'white', 'background-color':'#d32f2f' };
       return {};
     }
 

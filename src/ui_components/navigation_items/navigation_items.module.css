@@ -28,13 +28,13 @@
   .NavigationItem a:hover,
   .NavigationItem a:active,
   .NavigationItem a.active {
-    color: #A0522D;
+    color: #AAA;
     margin: 10px 0;
   }
   
   @media (max-width: 499px) {
     .NavigationItem a {
-      border: 1px solid #A0522D;
+      border: 1px solid #AAA;
       border-radius: 3px;
       text-align: center;
       margin-bottom: 5px;
@@ -65,7 +65,7 @@
   .NavigationItem a:hover,
   .NavigationItem a:active,
   .NavigationItem a.active {
-    background: #E1B58B;
-    border-bottom: 4px solid #A0522D;
+    background: #AAA;
+    border-bottom: 4px solid #888;
     color: white;
   }

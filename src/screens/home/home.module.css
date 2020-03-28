@@ -3,16 +3,16 @@
 .root {
     display: flex;
     flex: 1;
-    margin-top: 54px;
     padding: 5% 10%;
     flex-direction: column;
+
 }
 
 .container {
     display: flex;
     flex: 1;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: white;
+    background-color: rgb(255,255,255,0.8);
     flex-direction: column;
 }
 
@@ -50,7 +50,7 @@
     padding: 7px 10px;
     border-style: solid;
     background-color: white;
-    border-color: rgba(255, 145, 0, 0.452);
+    border-color: rgba(50, 50, 50, 0.452);
     border-radius: 2px;
     border-width: 2px;
     justify-content: center;
@@ -68,11 +68,11 @@
 .answerButton:active{
     transform: scale(0.9);
     background-color: darken(#138c91, 5%);
-    box-shadow: 0 2px 25px rgba(255, 145, 0, 0.452);
+    box-shadow: 0 2px 25px rgba(50, 50, 50, 0.452);
   }
 
 .answerButton:hover {
-    background: rgb(248, 222, 197);
+    background: rgb(200, 200, 200);
     /* transform: scale(1.1); */
 }
 
@@ -92,19 +92,23 @@
     font-size: 15px;
     font-weight: bold;
     text-align: center;
+    margin-top: 50px;
+    vertical-align: middle;
+    
 }
 
 .skipButton:hover .skip {
-    color: #E1B58B;
+    color: #888;
 }
 
 .skipButton:hover .skipIcon {
-    color: #E1B58B;
+    color: #888;
 }
 
 .rightAnswer {
-    border-color: green !important;
-    color: green;
+    border-color:#00600f !important;
+    color: white;
+    background-color: #00600f !important;
 }
 .wrongAnswer {
     border-color: red !important;
@@ -141,7 +145,8 @@
 }
 
 .heading{
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     font-style : italic;
+    margin: 20px 0;
 }
