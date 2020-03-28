@@ -128,7 +128,7 @@ export default class Home extends Component {
       <div className = {Styles.root}>  
       <p className={Styles.heading}> 
       
-      <a href="https://api.whatsapp.com/send?text=enter message here">Click here to share on Whatsapp</a>
+      <a target="_blank" href="https://api.whatsapp.com/send?text=enter message here">Click here to share on Whatsapp</a>
       
       Being aware is the first step towards being safe. It's the time to save yourself and your loved ones.</p>
         <List />
