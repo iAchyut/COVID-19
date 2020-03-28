@@ -31,7 +31,7 @@ export default class Toolbar extends Component {
           
         </span>
         <nav className={Styles.DesktopOnly}>
-          <NavigationItems />
+          {/* <NavigationItems /> */}
         </nav>
       </header>
     );
