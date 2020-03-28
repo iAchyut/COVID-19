@@ -1,5 +1,13 @@
 
-import $ from 'jquery';
+// change the question in following format
+/**
+ * [
+ *    {
+ *      Question: "This is Question", Opt1: 'option1', Opt2: 'OPtion2', Opt3: 'Option3',
+ *      Opt4:'OPTION4', Ans: 'OPTION4',
+ *    }
+ * ]
+ */
 export function getQue(indexes) {
     var items = ['Where did COVID-19 Outbreak started ?', 'How long is incubation period for COVID-19 ?', 'Which among the following  are not symptons of COVID-19.', 'Which country has most casualty due to COVID-19?', 'Which country has most COVID-19 positive cases ?', 
     'Counties/Area or Territories affected by COVID-19', 'Fact Check: COVID-19 is ', 'Fact Check: COVID-19 has ', 'Fact Check: Cold Weather can kill Coronavirus','Fact Check: Cornovirus can be transmitted through Mosquito bite','Fact Check: Do vaccines against pneumonia protect you against the new coronavirus?'];
@@ -17,9 +25,4 @@ export function getQue(indexes) {
     var opt4 = option4[indexes];
     var ans= answers[indexes];
     return { selectedItems, opt1, opt2, opt3, opt4, ans };
-  }
-  export function saveResult(opt)
-  {
-    var input = document.getElementById(opt).value;
-    $('result').text(input);
   }
