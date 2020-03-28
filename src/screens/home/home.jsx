@@ -14,7 +14,7 @@ import { questions } from './script';
 
 
 const Questions = [...questions];
-const QuestionsPerTest = 3;
+const QuestionsPerTest = 10;
 
 const currentQID = 'current Question Id';
 const score = 'score';
@@ -29,6 +29,7 @@ export default class Home extends Component {
       isAnswered: false,
       selectedOption: null,
 
+
     };
 
     this.baseState = {
@@ -38,6 +39,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     // TODO: fetch user data using id if url contains id
+    if(this.state.currentQuestionIndex === 0){localStorage.setItem(score, 0);}
   }
 
   _changeQuestionId = () => {
@@ -61,6 +63,7 @@ export default class Home extends Component {
     this.setState(this.baseState);
     localStorage.setItem(currentQID, 0);
     this.setState({ isResult: true });
+    
   }
 
   _saveResult = (value, rightAnswer) => {
@@ -109,17 +112,22 @@ export default class Home extends Component {
 
   render() {
     const { currentQuestionIndex, isResult, isAnswered } = this.state;
+    if(currentQuestionIndex >= QuestionsPerTest){localStorage.setItem(currentQID, 0); this.setState({currentQuestionIndex: 0})}
+    
     return (
       <div className = {Styles.root}>
         <List />
         <div className = {Styles.container}>
           {
             isResult ? (
-              <div>
+              <div className = {Styles.questionAnswerContainer}>
                 <Test />
-                <div onClick = {this._resetQuestioniare}>
-                  Restart this test!!
-                </div>
+                <div className = {Styles.optionButtonContainer}>
+                        <OptionButton
+                          onClick = {this._resetQuestioniare}
+                          title = "Restart this test!!"
+                        />
+                      </div>
               </div>
             ) : (
               <div className = {Styles.questionAnswerContainer}>

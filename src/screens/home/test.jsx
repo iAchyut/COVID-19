@@ -33,7 +33,12 @@ export default class Test extends Component {
     console.log(isActive);
     const currentScore = localStorage.getItem(score) || 0;
     return (
-      <span > Your Final Fucking Score is : {String(currentScore)}</span>
+      <div >
+                <span className = {Styles.question}>
+                  Your Final Score is : {String(currentScore)}
+                </span>
+                </div>
+      
     );  
   }
 }

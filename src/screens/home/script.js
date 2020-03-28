@@ -32,10 +32,10 @@
 
 export const questions = [
   {
-    question: 'Where did COVID-19 Outbreak started ?',
-    options: ['Japan', 'China', 'Korea', 'Taiwan'],
-    answer: 'China',
-    answerIndex: 1,
+    question: 'How long do Coronavirus survive on sufaces?',
+    options: [ 'Less than a minute', 'Upto an year', 'Can not survive at all', 'Few hours to several days'],
+    answer: 'Few hours to several days',
+    answerIndex: 3,
   },
   {
     question: 'How long is incubation period for COVID-19 ?',
@@ -46,7 +46,59 @@ export const questions = [
   {
     question: 'Which among the following  are not symptons of COVID-19 ?',
     options: ['Fever', 'Dry Cough', 'Breathlessness', 'Wet Cough'],
-    answer: 'Diabetes',
-    answerIndex: 2,
+    answer: 'Wet Cough',
+    answerIndex: 3,
+  },
+  {
+    question: 'Which country has most COVID-19 positive cases ?',
+    options: ['USA', 'CHINA', 'ITALY', 'SPAIN'],
+    answer: 'USA',
+    answerIndex: 0,
+  },
+  {
+    question: 'I catch COVID-19 from my Pet',
+    options: ['Myth', 'Fact'],
+    answer: 'Myth',
+    answerIndex: 0,
+  },
+  {
+    question: 'Fact Check: COVID-19 is ',
+    options: ['More infectious than SARS', 'Less infectious than SARS'],
+    answer: 'More infectious than SARS',
+    answerIndex: 0,
+  },
+  {
+    question: 'Fact Check: COVID-19 has ',
+    options: ['Less fatalilty rate than SARS', 'More fatalilty rate than SARS'],
+    answer: 'Less fatalilty rate than SARS',
+    answerIndex: 1,
+  },
+  {
+    question: 'Summer season can kill Coronavirus',
+    options: ['Myth', 'Fact'],
+    answer: 'Myth',
+    answerIndex: 0,
+  },
+  {
+    question: 'Fact Check: Cornovirus can be transmitted through Mosquito bite',
+    options: ['Myth', 'Fact'],
+    answer: 'Myth',
+    answerIndex: 0,
+    description: ''
+  },
+  {
+    question: 'Do vaccines against pneumonia protect you against the new coronavirus?',
+    options: ['Myth', 'Fact'],
+    answer: 'Myth',
+    answerIndex: 0,
+    description: 'Not yet. To date, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-2019.'
+  },
+  {
+    question: 'Coronavirus is airborne',
+    options: ['Myth', 'Fact'],
+    answer: 'Myth',
+    answerIndex: 0,
+    description: 'The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or speaks. There droplets are too heavy to hang in the air. They quickly fall on floors or surfaces.'
+
   },
 ];
