@@ -15,9 +15,7 @@ class App extends Component {
   _renderRoutes = () => {
     const routes = (
       <Switch>
-        <Route path="/home/:id" component={Home} />
-        <Route path="/home" component={Home} />
-        <Redirect to="/home" />
+        <Route path="/" component={Home} />
       </Switch>
     );
 
