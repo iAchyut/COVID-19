@@ -45,7 +45,7 @@ export const questions = [
   },
   {
     question: 'Which among the following  are not symptons of COVID-19 ?',
-    options: ['Fever', 'Dry Cough', 'Diabetes', 'Breathlessness'],
+    options: ['Fever', 'Dry Cough', 'Breathlessness', 'Wet Cough'],
     answer: 'Diabetes',
     answerIndex: 2,
   },

@@ -14,7 +14,7 @@ import { questions } from './script';
 
 
 const Questions = [...questions];
-const QuestionsPerTest = 2;
+const QuestionsPerTest = 3;
 
 const currentQID = 'current Question Id';
 const score = 'score';
@@ -101,6 +101,7 @@ export default class Home extends Component {
     if (isAnswered) {
       if (option === answer) return { borderColor: '#1abc9c', color: '#1abc9c' };
       if (selectedOption === option) return { borderColor: 'red', color: 'red' };
+      return {};
     }
 
     return {};
