@@ -100,7 +100,7 @@ export default class Home extends Component {
       button1 = <div className={clsx(Styles.answerContainer, { [Styles.rightAnswer]: que.ans === que.opt1 && this.state.isAnswered ?true: false ,
         [Styles.wrongAnswer]: que.ans !== que.opt1 && this.state.isAnswered && this.state.selectedOption == que.opt1 ?true : false 
      })}>
-       <div  onClick={() => this._saveResult(que.opt1, que.ans)} className={Styles.answerbutton}>
+       <div  onClick={() => this._saveResult(que.opt1, que.ans)} className={Styles.example_d}>
          <div id="opt1">
            {que.opt1} 
          </div>
@@ -116,7 +116,7 @@ export default class Home extends Component {
       button2 = <div className={clsx(Styles.answerContainer, { [Styles.rightAnswer]: que.ans === que.opt2 && this.state.isAnswered ?true: false ,
         [Styles.wrongAnswer]: que.ans !== que.opt2 && this.state.isAnswered && this.state.selectedOption == que.opt2 ?true : false 
      })}>
-       <div  onClick={() => this._saveResult(que.opt2, que.ans)} className={Styles.answerbutton}>
+       <div  onClick={() => this._saveResult(que.opt2, que.ans)} className={Styles.example_d}>
          <div id="opt2">
            {que.opt2} 
          </div>
@@ -132,7 +132,7 @@ export default class Home extends Component {
       button3 = <div className={clsx(Styles.answerContainer, { [Styles.rightAnswer]: que.ans === que.opt3 && this.state.isAnswered ?true: false ,
         [Styles.wrongAnswer]: que.ans !== que.opt3 && this.state.isAnswered && this.state.selectedOption == que.opt3 ?true : false 
      })}>
-       <div  onClick={() => this._saveResult(que.opt3, que.ans)} className={Styles.answerbutton}>
+       <div  onClick={() => this._saveResult(que.opt3, que.ans)} className={Styles.example_d}>
          <div id="opt3">
            {que.opt3} 
          </div>
@@ -148,7 +148,7 @@ export default class Home extends Component {
       button4 = <div className={clsx(Styles.answerContainer, { [Styles.rightAnswer]: que.ans === que.opt4 && this.state.isAnswered ?true: false ,
         [Styles.wrongAnswer]: que.ans !== que.opt4 && this.state.isAnswered && this.state.selectedOption == que.opt4 ?true : false 
      })}>
-       <div  onClick={() => this._saveResult(que.opt4, que.ans)} className={Styles.answerbutton}>
+       <div  onClick={() => this._saveResult(que.opt4, que.ans)} className={Styles.example_d}>
          <div id="opt4">
            {que.opt4} 
          </div>
