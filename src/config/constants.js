@@ -1,3 +1,3 @@
 export const Constants = {
-  FRONTEND_VERSION: '0.1',
+  FRONTEND_VERSION: '1.0',
 };

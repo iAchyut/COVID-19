@@ -13,7 +13,7 @@ import { number } from 'prop-types';
 
 const currentQID = "current Question Id";
 const score = "score";
-
+let timer;
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -56,11 +56,18 @@ export default class Home extends Component {
       localStorage.setItem(score, Number(currentScore) + 1);
     }
     
+    
+    clearTimeout(timer);
+    timer = setTimeout(() => {return this.state.isAnswered ? this._changeQuestionId():""
+      
+    }, 5000);
+    
 
   }
 
   _isAnswered = () => {
     this.setState({isAnswered: true});
+   
     
   }
   _resetQuestioniare = () => {
@@ -90,27 +97,13 @@ export default class Home extends Component {
       this._resetQuestionId();
       
     }
-    let button1;
+    let button1 = '';
     let button2;
     let button3;
     let button4;
 
-    if (que.opt1 != '')
-    {
-      button1 = <div className={clsx(Styles.answerContainer, { [Styles.rightAnswer]: que.ans === que.opt1 && this.state.isAnswered ?true: false ,
-        [Styles.wrongAnswer]: que.ans !== que.opt1 && this.state.isAnswered && this.state.selectedOption == que.opt1 ?true : false 
-     })}>
-       <div  onClick={() => this._saveResult(que.opt1, que.ans)} className={Styles.example_d}>
-         <div id="opt1">
-           {que.opt1} 
-         </div>
-       </div>
-     </div>
-    }
-    else
-    {
-      button1=<div></div>
-    }
+   
+
     if (que.opt2 != '')
     {
       button2 = <div className={clsx(Styles.answerContainer, { [Styles.rightAnswer]: que.ans === que.opt2 && this.state.isAnswered ?true: false ,
@@ -177,6 +170,7 @@ export default class Home extends Component {
     }
     
     console.log(this.state.isActive, que);
+   
     
     return (
       <div className={Styles.root}>
@@ -190,7 +184,20 @@ export default class Home extends Component {
             </div>
             <div> <br></br>
             </div>
-            {button1}
+            {
+              que.opt1 != '' 
+                ? (
+                <div className={clsx(Styles.answerContainer, {[Styles.beforeClick]: !this.state.isAnswered})}>
+                <div  className={clsx(Styles.example_d,{  [Styles.rightAnswer]: que.ans === que.opt1 && this.state.isAnswered ?true: false ,
+                 [Styles.wrongAnswer]: que.ans !== que.opt1 && this.state.isAnswered && this.state.selectedOption == que.opt1 ?true : false 
+              })} onClick={() =>{ if (!this.state.isAnswered)  this._saveResult(que.opt1, que.ans)}}>
+                  <div id="opt1">
+                    {que.opt1} 
+                  </div>
+                </div>
+              </div>)
+                : ''
+            } 
             <div> <br></br>
             </div>
             {button2}

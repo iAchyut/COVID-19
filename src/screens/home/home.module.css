@@ -95,11 +95,11 @@
 }
 
 .rightAnswer {
-    border-color: green;
+    border-color: green !important;
     color: green;
 }
 .wrongAnswer {
-    border-color: red;
+    border-color: red !important;
     color: red;
 }
 .button {
@@ -130,7 +130,7 @@
  text-transform: uppercase;
  background: #ffffff;
  padding: 10px;
- border: 1px solid #336699 !important;
+ border: 1px solid #336699 ;
  border-radius: 1px;
  display: inline-block;
  transition: all 0.3s ease 0s;
@@ -138,16 +138,11 @@
  width: 230px;
  text-align: center;
     }
-    .example_c:hover {
-        color: #494949 !important;
-        border-radius: 50px;
-        border-color: #494949 !important;
-        transition: all 0.3s ease 0s; 
-        }
+    
 
-        .example_d:hover {
-            color: #ffffff !important;
+            .beforeClick .example_d:hover {
+            color: #ffffff ;
             background:#666699;
-            border-color: #666699 !important;
+            border-color: #666699 ;
             transition: all 0.4s ease 0s;
             }
