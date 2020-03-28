@@ -125,7 +125,8 @@ export default class Home extends Component {
     if(currentQuestionIndex >= QuestionsPerTest){localStorage.setItem(currentQID, 0); this.setState({currentQuestionIndex: 0})}
     
     return (
-      <div className = {Styles.root}>
+      <div className = {Styles.root}>  
+      <p className={Styles.heading}>Being aware is the first step towards being safe. It's the time to save yourself and your loved ones.</p>
         <List />
         <div className = {Styles.container}>
           {

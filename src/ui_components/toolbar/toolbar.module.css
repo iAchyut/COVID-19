@@ -28,6 +28,12 @@
        color: white;
        font-size: 10px;
      }
+  .website{
+    font-weight: 700;
+    margin-left: 0px; 
+       color: white;
+       font-size: 1rem;
+  }
   @media (max-width: 499px) {
     .DesktopOnly {
       display: none;

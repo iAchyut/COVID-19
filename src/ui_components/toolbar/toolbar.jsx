@@ -25,9 +25,10 @@ export default class Toolbar extends Component {
           <div />
           <div />
         </div>
-        <p className={Styles1.Title} />
+        <p className={Styles1.Title}  ></p> 
         <span className={Styles.versionBox}>
-          <p className={Styles.Title}>{FRONTEND_VERSION}</p>
+          <p className={Styles.website}>COVID19Quiz</p>
+          
         </span>
         <nav className={Styles.DesktopOnly}>
           <NavigationItems />

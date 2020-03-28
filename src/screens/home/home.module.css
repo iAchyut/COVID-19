@@ -139,3 +139,9 @@
     align-self: stretch;
     justify-content: center;
 }
+
+.heading{
+    font-size: 1.5em;
+    text-align: center;
+    font-style : italic;
+}
