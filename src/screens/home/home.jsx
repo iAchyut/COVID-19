@@ -20,7 +20,7 @@ const QuestionsPerTest = 10;
 const currentQID = 'current Question Id';
 const score = 'score';
 let timer;
-const textToShare = 'https://covid19quiz.netlify.com/ Spread this message for the sake of your loved ones. Be the responsible one.';
+const textToShare = encodeURI('https://covid19quiz.netlify.com/ Spread this message for the sake of your loved ones. Be the responsible one.');
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -132,7 +132,7 @@ export default class Home extends Component {
           <a className={Styles.whatsapp} target="_blank" href={`https://web.whatsapp.com/send?l=en&text=${textToShare}`}>
             <img src = {whatsapp} alt = "Whatsapp" />
           </a>
-          <a className={Styles.whatsappMobile} href={`whatsapp://send?text=${textToShare}`} data-action="share/whatsapp/share">
+          <a className={Styles.whatsappMobile} href={`https://wa.me/?text=${textToShare}`} data-action="share/whatsapp/share">
             <img src = {whatsapp} alt = "Whatsapp" />
           </a>
 
