@@ -170,6 +170,11 @@
     visibility: hidden;
     display: none;
 }
+.whatsappMobile{
+    
+    visibility: hidden;
+    display: none;
+}
 
 .whatsapp {
     display: flex;
@@ -188,7 +193,7 @@
         margin-top: 50px;
         margin-bottom: 15px;
     }
-    .whatsappMobile img{
+    .whatsappMobile {
         visibility: visible;
         display: inherit;
     }
