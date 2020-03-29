@@ -16,7 +16,8 @@ module.exports = {
       "prefer-destructuring": ["warn"],
       "max-classes-per-file": [0],
       "react/static-property-placement": [0],
-      "react/forbid-prop-types": [1]
+      "react/forbid-prop-types": [1],
+      "react/jsx-one-expression-per-line": [0]
   },
   "env": {
       "browser": true,
