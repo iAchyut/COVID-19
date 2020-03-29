@@ -44,7 +44,6 @@ export default class Test extends Component {
             <a className = {Styles.whatsapp} target = "_blank" href = {`https://web.whatsapp.com/send?l=en&text=${textToShare}`}>
               <img src = {whatsapp} alt = "Whatsapp" />
             </a>
-
             <a className = {Styles.whatsappMobile} href = {`https://wa.me/?text=${textToShare}`} data-action = "share/whatsapp/share">
               <img src = {whatsapp} alt = "Whatsapp" />
             </a>

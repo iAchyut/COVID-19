@@ -3,7 +3,7 @@
 .root {
     display: flex;
     flex: 1;
-    padding: 5% 10%;
+    padding: 5% 20%;
     flex-direction: column;
 
 }
@@ -12,7 +12,7 @@
     display: flex;
     flex: 1;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: rgb(255,255,255,0.2);
+    background-color: rgb(255,255,255,0.1);
     flex-direction: column;
 }
 
@@ -147,6 +147,7 @@
 }
 
 .heading{
+    display: flex;
     font-size: 2em;
     text-align: center;
     font-style : italic;
@@ -194,6 +195,9 @@
     .whatsapp{
         visibility: hidden;
         display: none;
+    }
+    .root {
+        padding: 5px 5px;
     }
   }
   

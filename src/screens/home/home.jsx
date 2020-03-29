@@ -143,7 +143,7 @@ export default class Home extends Component {
         <List />
         <div className = {Styles.container}>
           {
-            !isResult ? (
+            isResult ? (
               <div className = {Styles.questionAnswerContainer}>
                 <Test 
                  totalQuestions = {QuestionsPerTest}/>
