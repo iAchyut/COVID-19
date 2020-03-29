@@ -14,6 +14,8 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: rgb(255,255,255,0.1);
     flex-direction: column;
+    text-align: center;
+    
 }
 
 .questionAnswerContainer {
@@ -26,9 +28,21 @@
 }
 
 .question {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
-    color: white;
+    color:white;
+    /* text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 40px #88A,
+    0 0 70px #88a,
+    0 0 80px #88a,
+    0 0 100px #88a,
+    0 0 150px #88a; */
+    
+}
+.result{
+    font-size: 30px;
 }
 
 .answerContainer {
@@ -87,7 +101,7 @@
     padding-left: 15px;
     align-items: center;
     cursor: pointer;
-    color: #eee;
+    color: #fff;
 }
 
 .skipButton .skip {
@@ -153,10 +167,12 @@
     font-style : italic;
     margin: 30px 0;
     color: white;
+    
 }
 .shareContainer {
     display: flex;
     align-items: center;
+    text-align: center;
 }
 .whatsappMobile{
     display: flex;
@@ -187,6 +203,7 @@
         font-size: 1.5em;
         margin-top: 50px;
         margin-bottom: 15px;
+
     }
     .whatsappMobile img{
         visibility: visible;
@@ -200,4 +217,21 @@
         padding: 5px 5px;
     }
   }
+  .glow {
+
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
   
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #88a, 0 0 30px #88a, 0 0 40px #88a, 0 0 50px #88a, 0 0 60px #88a, 0 0 70px #88a;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #88a, 0 0 40px #88a, 0 0 50px #88b, 0 0 60px #88a, 0 0 70px #88b, 0 0 80px #88b;
+    }
+  }

@@ -144,9 +144,11 @@ export default class Home extends Component {
         <div className = {Styles.container}>
           {
             isResult ? (
+              
+              
               <div className = {Styles.questionAnswerContainer}>
-                <Test 
-                 totalQuestions = {QuestionsPerTest}/>
+              <Test 
+                 totalQuestions = {QuestionsPerTest}/> 
                 <div className = {Styles.optionButtonContainer}>
                         <OptionButton
                           onClick = {this._resetQuestioniare}
@@ -154,6 +156,7 @@ export default class Home extends Component {
                         />
                       </div>
               </div>
+              
             ) : (
               <div className = {Styles.questionAnswerContainer}>
                 <span className = {Styles.question}>
