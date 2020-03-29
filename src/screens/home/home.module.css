@@ -155,6 +155,7 @@
 }
 .shareContainer {
     display: flex;
+    align-items: center;
 }
 .whatsappMobile{
     display: flex;
@@ -168,9 +169,16 @@
     visibility: hidden;
     display: none;
 }
-.whatsapp img{
+
+.whatsapp {
+    display: flex;
     height: 30px;
     width: 30px;
+}
+
+.whatsapp img{
+    height: 100%;
+    width: 100%;
 }
 
 @media (max-width: 900px) {
