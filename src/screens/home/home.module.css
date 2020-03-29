@@ -153,6 +153,16 @@
     margin: 30px 0;
     color: white;
 }
+.whatsappMobile img{
+    height: 20px;
+    width: 20px;
+    visibility: hidden;
+    display: none;
+}
+.whatsapp img{
+    height: 30px;
+    width: 30px;
+}
 
 @media (max-width: 900px) {
     .heading {
@@ -160,4 +170,13 @@
         margin-top: 50px;
         margin-bottom: 15px;
     }
+    .whatsappMobile{
+        visibility: visible;
+        display: inherit;
+    }
+    .whatsapp{
+        visibility: hidden;
+        display: none;
+    }
   }
+  

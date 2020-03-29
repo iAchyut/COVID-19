@@ -11,6 +11,7 @@ import Styles from './home.module.css';
 import Test from './test';
 import List from './list';
 import { questions } from './script';
+import whatsapp from '../../whatsapp.svg';
 
 const Questions = [...questions];
 shuffle(Questions);
@@ -19,6 +20,7 @@ const QuestionsPerTest = 10;
 const currentQID = 'current Question Id';
 const score = 'score';
 let timer;
+const textToShare = 'https://covid19quiz.netlify.com/ Spread this message for the sake of your loved ones. Be the responsible one.';
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -125,17 +127,17 @@ export default class Home extends Component {
     if(currentQuestionIndex >= QuestionsPerTest){localStorage.setItem(currentQID, 0); this.setState({currentQuestionIndex: 0})}
     
     return (
-      <div className = {Styles.root}>  
-      <p className={Styles.heading}> 
-      
-      <a href="https://web.whatsapp.com/send?l=en&text=https://covid19quiz.netlify.com/">Share this</a>
-      {' '}
-      <a href="https://wa.me/?text=I'm%20inquiring%20about%20the%20apartment%20listing" >share2</a>
+      <div className = {Styles.root}>
+        <p className={Styles.heading}>
+          <a className={Styles.whatsapp} target="_blank" href={`https://web.whatsapp.com/send?l=en&text=${textToShare}`}>
+            <img src = {whatsapp} alt = "Whatsapp" />
+          </a>
+          <a className={Styles.whatsappMobile} href={`whatsapp://send?text=${textToShare}`} data-action="share/whatsapp/share">
+            <img src = {whatsapp} alt = "Whatsapp" />
+          </a>
 
-      {' '}
-      <a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">Share via Whatsapp</a>
-
-      Being aware is the first step towards being safe. It's the time to save yourself and your loved ones.</p>
+          Being aware is the first step towards being safe. It&apos;s the time to save yourself and your loved ones.
+        </p>
         <List />
         <div className = {Styles.container}>
           {
