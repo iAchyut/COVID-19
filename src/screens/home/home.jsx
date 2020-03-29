@@ -26,7 +26,7 @@ const textToShare = encodeURI('https://covid19quiz.netlify.com/ Spread this mess
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
 }
@@ -51,7 +51,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     // TODO: fetch user data using id if url contains id
-    if(this.state.currentQuestionIndex === 0){localStorage.setItem(score, 0);}
+    if (this.state.currentQuestionIndex === 0) { localStorage.setItem(score, 0); }
   }
 
   _changeQuestionId = () => {
@@ -75,7 +75,6 @@ export default class Home extends Component {
     this.setState(this.baseState);
     localStorage.setItem(currentQID, 0);
     this.setState({ isResult: true });
-    
   }
 
   _saveResult = (value, rightAnswer) => {
@@ -112,12 +111,11 @@ export default class Home extends Component {
   }
 
 
-
   _returnOptionButtonStyles = (option, answer) => {
     const { isAnswered, selectedOption } = this.state;
     if (isAnswered) {
-      if (option === answer) return { borderColor: '#00600f', color: 'white', 'background-color':'#00600f'  };
-      if (selectedOption === option) return { borderColor: '#d32f2f', color: 'white', 'background-color':'#d32f2f' };
+      if (option === answer) return { borderColor: '#00600f', color: 'white', 'background-color': '#00600f' };
+      if (selectedOption === option) return { borderColor: '#d32f2f', color: 'white', 'background-color': '#d32f2f' };
       return {};
     }
 
@@ -126,20 +124,25 @@ export default class Home extends Component {
 
   render() {
     const { currentQuestionIndex, isResult, isAnswered } = this.state;
-    if(currentQuestionIndex >= QuestionsPerTest){localStorage.setItem(currentQID, 0); this.setState({currentQuestionIndex: 0})}
-    
+    if (currentQuestionIndex >= QuestionsPerTest) { localStorage.setItem(currentQID, 0); this.setState({ currentQuestionIndex: 0 }); }
+
     return (
       <div className = {Styles.root}>
-        <p className={Styles.heading}>
-          <a className={Styles.whatsapp} target="_blank" href={`https://web.whatsapp.com/send?l=en&text=${textToShare}`}>
-            <img src = {whatsapp} alt = "Whatsapp" />
-          </a>
-          <a className={Styles.whatsappMobile} href={`https://wa.me/?text=${textToShare}`} data-action="share/whatsapp/share">
-            <img src = {whatsapp} alt = "Whatsapp" />
-          </a>
-
-          Being aware is the first step towards being safe. It&apos;s the time to save yourself and your loved ones.
-        </p>
+        <span className = {Styles.heading}>
+          <div>
+            <a className = {Styles.whatsapp} target = "_blank" href = {`https://web.whatsapp.com/send?l=en&text=${textToShare}`}>
+              <img src = {whatsapp} alt = "Whatsapp" />
+            </a>
+          </div>
+          <div>
+            <a className = {Styles.whatsappMobile} href = {`https://wa.me/?text=${textToShare}`} data-action = "share/whatsapp/share">
+              <img src = {whatsapp} alt = "Whatsapp" />
+            </a>
+          </div>
+          <div>
+            Being aware is the first step towards being safe. It&apos;s the time to save yourself and your loved ones.
+          </div>
+        </span>
         <List />
         <div className = {Styles.container}>
           {
@@ -147,14 +150,15 @@ export default class Home extends Component {
               
               
               <div className = {Styles.questionAnswerContainer}>
-              <Test 
-                 totalQuestions = {QuestionsPerTest}/> 
+                <Test
+                  totalQuestions = {QuestionsPerTest}
+                />
                 <div className = {Styles.optionButtonContainer}>
-                        <OptionButton
-                          onClick = {this._resetQuestioniare}
-                          title = "Restart this test!!"
-                        />
-                      </div>
+                  <OptionButton
+                    onClick = {this._resetQuestioniare}
+                    title = "Restart this test!!"
+                  />
+                </div>
               </div>
               
             ) : (
