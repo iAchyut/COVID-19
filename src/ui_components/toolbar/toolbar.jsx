@@ -26,14 +26,7 @@ export default class Toolbar extends Component {
           <div />
           <div />
         </div> */}
-        <p className={Styles1.Title}  ></p> 
-        <span className={Styles.versionBox}>
-         
-          
-        </span>
-        <nav className={Styles.DesktopOnly}>
-          {/* <NavigationItems /> */}
-        </nav>
+        
       </header>
     );
   }

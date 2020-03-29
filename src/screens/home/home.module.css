@@ -153,6 +153,9 @@
     margin: 30px 0;
     color: white;
 }
+.whatsappMobile{
+    z-index: 100;
+}
 .whatsappMobile img{
     height: 20px;
     width: 20px;
