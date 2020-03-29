@@ -129,6 +129,8 @@ export default class Home extends Component {
       <p className={Styles.heading}> 
       
       <a href="https://web.whatsapp.com/send?l=en&text=https://covid19quiz.netlify.com/">Share this</a>
+      {' '}
+      <a href="https://wa.me/?text=I'm%20inquiring%20about%20the%20apartment%20listing" target="_blank">share2</a>
 
       Being aware is the first step towards being safe. It's the time to save yourself and your loved ones.</p>
         <List />
