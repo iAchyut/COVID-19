@@ -7,11 +7,13 @@ import { angleDoubleRight } from 'react-icons-kit/fa/angleDoubleRight';
 import {
   object, string, bool, func,
 } from 'prop-types';
+
 import Styles from './home.module.css';
 import Test from './test';
 import List from './list';
 import { questions } from './script';
 import whatsapp from '../../whatsapp.svg';
+
 
 const Questions = [...questions];
 shuffle(Questions);
@@ -141,7 +143,7 @@ export default class Home extends Component {
         <List />
         <div className = {Styles.container}>
           {
-            isResult ? (
+            !isResult ? (
               <div className = {Styles.questionAnswerContainer}>
                 <Test 
                  totalQuestions = {QuestionsPerTest}/>
