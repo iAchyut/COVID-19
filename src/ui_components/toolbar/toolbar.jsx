@@ -20,7 +20,7 @@ export default class Toolbar extends Component {
     const { toggleMenu } = this.props;
     return (
       <header className={Styles.Toolbar}>
-         <span className={Styles.website}>COVID19Quiz</span>
+         <span className={Styles.website}>COVID-19 Quiz</span>
         {/* <div className={Styles1.DrawerToggle} onClick={toggleMenu}>
           <div />
           <div />
