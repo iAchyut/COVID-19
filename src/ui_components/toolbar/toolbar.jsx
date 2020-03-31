@@ -33,6 +33,7 @@ export default class Toolbar extends Component {
               <img src = {whatsapp} alt = "Whatsapp" />
             </a>
           </div>
+          
          
         {/* <div className={Styles1.DrawerToggle} onClick={toggleMenu}>
           <div />

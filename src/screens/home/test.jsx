@@ -38,9 +38,9 @@ export default class Test extends Component {
     return (
       <div>
         <div className = {clsx(Styles.question, Styles.glow, Styles.result)}>
-          Your Final Score is : {String(currentScore)} / {this.props.totalQuestions} <br />
+          Your Final Score: {String(currentScore)} / {this.props.totalQuestions} <br />
           <div className = {Styles.shareContainer}>
-            <div style = {{ marginRight: 7}}>Share your Result :</div>
+            <div style = {{ marginRight: 7}}>Share your Result:</div>
             
             <a className = {Styles.whatsapp} target = "_blank" href = {`https://web.whatsapp.com/send?l=en&text=${textToShare}`}>
               <img src = {whatsapp} alt = "Whatsapp" />

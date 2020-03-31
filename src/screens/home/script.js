@@ -33,27 +33,27 @@
 export const questions = [
   {
     question: 'How long do Coronavirus survive on sufaces?',
-    options: [ 'Less than a minute', 'Upto an year', 'Can not survive at all', 'Few hours to several days'],
+    options: [ 'Less than a minute', 'Few hours to several days','Upto an year', 'Can not survive at all'],
     answer: 'Few hours to several days',
-    answerIndex: 3,
+    answerIndex: 1,
   },
   {
     question: 'How long is incubation period for COVID-19 ?',
-    options: ['1-14 days', '2-3 days', '6-7 days', '8-9 days'],
+    options: [ '2-3 days', '6-7 days','1-14 days', '8-9 days'],
     answer: '1-14 days',
-    answerIndex: 0,
+    answerIndex: 2,
   },
   {
     question: 'Which among the following  are not symptons of COVID-19 ?',
-    options: ['Fever', 'Dry Cough', 'Breathlessness', 'Wet Cough'],
+    options: ['Fever',  'Wet Cough','Dry Cough', 'Breathlessness'],
     answer: 'Wet Cough',
-    answerIndex: 3,
+    answerIndex: 1,
   },
   {
     question: 'Which country has most COVID-19 positive cases ?',
-    options: ['USA', 'CHINA', 'ITALY', 'SPAIN'],
+    options: [ 'CHINA', 'ITALY', 'USA','SPAIN'],
     answer: 'USA',
-    answerIndex: 0,
+    answerIndex: 2,
   },
   {
     question: 'I can catch COVID-19 from my Pet',
@@ -63,9 +63,9 @@ export const questions = [
   },
   {
     question: 'Fact Check: COVID-19 is ',
-    options: ['More infectious than SARS', 'Less infectious than SARS'],
+    options: [ 'Less infectious than SARS', 'More infectious than SARS'],
     answer: 'More infectious than SARS',
-    answerIndex: 0,
+    answerIndex: 1,
   },
   {
     question: 'Fact Check: COVID-19 has ',
@@ -81,9 +81,9 @@ export const questions = [
   },
   {
     question: 'Fact Check: Cornovirus can be transmitted through Mosquito bite',
-    options: ['Myth', 'Fact'],
+    options: [ 'Fact','Myth'],
     answer: 'Myth',
-    answerIndex: 0,
+    answerIndex: 1,
     description: ''
   },
   {
@@ -95,9 +95,9 @@ export const questions = [
   },
   {
     question: 'Coronavirus is airborne',
-    options: ['Myth', 'Fact'],
+    options: ['Fact','Myth'],
     answer: 'Myth',
-    answerIndex: 0,
+    answerIndex: 1,
     description: 'The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or speaks. There droplets are too heavy to hang in the air. They quickly fall on floors or surfaces.'
 
   },

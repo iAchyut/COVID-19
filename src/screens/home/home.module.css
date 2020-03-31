@@ -90,7 +90,7 @@
   }
 
 .answerButton:hover {
-    border-color: grey;
+    border-color: yellow;
     background-color: rgba(200, 200, 200, 1)
     /* transform: scale(1.1); */
 }
@@ -178,12 +178,13 @@
     display: flex;
     align-items: center;
     text-align: center;
+    
 }
 .whatsappMobile{
     display: flex;
     z-index: 100;
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
 }
 .whatsappMobile img{
     height: 100%;
@@ -213,22 +214,33 @@
         font-size: 1.5em;
         margin-top: 50px;
         margin-bottom: 15px;
+        text-align: center;
+        padding-right: 4em;
 
     }
+    
     .whatsappMobile {
+        display: inherit; 
+        visibility: visible;
+        
+        
+    }
+    .whatsappMobile img{
+        height: 100%;
+        width: 100%;
         visibility: visible;
         display: inherit;
     }
     .whatsapp{
-        visibility: hidden;
+        visibility: visible;
         display: none;
+        
     }
     .root {
         padding: 10% 10px;
     }
   }
   .glow {
-
     color: #fff;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -245,3 +257,4 @@
       text-shadow: 0 0 20px #fff, 0 0 30px #88a, 0 0 40px #88a, 0 0 50px #88b, 0 0 60px #88a, 0 0 70px #88b, 0 0 80px #88b;
     }
   }
+  
