@@ -34,7 +34,7 @@ export default class Test extends Component {
     console.log(this.props, 'this is prop');
     console.log(isActive);
     const currentScore = localStorage.getItem(score) || 0;
-    const textToShare = `${encodeURI(`I scored - ${String(currentScore)}/${this.props.totalQuestions}`)} Let's see how much can you score !! \n Click the link to test your knowledge.` + ' https://covid19quiz.netlify.com/';
+    const textToShare = `${encodeURI(`I scored - ${String(currentScore)}/${this.props.totalQuestions}`)} Let's see how much you are aware about Coronavirus !! \n Click the link to test yours -` + ' https://covid19quiz.netlify.com/';
     return (
       <div>
         <div className = {clsx(Styles.question, Styles.glow, Styles.result)}>
