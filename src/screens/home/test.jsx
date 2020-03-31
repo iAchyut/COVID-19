@@ -41,12 +41,14 @@ export default class Test extends Component {
           Your Final Score is : {String(currentScore)} / {this.props.totalQuestions} <br />
           <div className = {Styles.shareContainer}>
             <div style = {{ marginRight: 7}}>Share your Result :</div>
+            
             <a className = {Styles.whatsapp} target = "_blank" href = {`https://web.whatsapp.com/send?l=en&text=${textToShare}`}>
               <img src = {whatsapp} alt = "Whatsapp" />
             </a>
             <a className = {Styles.whatsappMobile} href = {`https://wa.me/?text=${textToShare}`} data-action = "share/whatsapp/share">
               <img src = {whatsapp} alt = "Whatsapp" />
             </a>
+            
           </div>
         </div>
       </div>

@@ -56,7 +56,7 @@ export const questions = [
     answerIndex: 0,
   },
   {
-    question: 'I catch COVID-19 from my Pet',
+    question: 'I can catch COVID-19 from my Pet',
     options: ['Myth', 'Fact'],
     answer: 'Myth',
     answerIndex: 0,

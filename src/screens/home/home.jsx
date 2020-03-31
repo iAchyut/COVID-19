@@ -115,6 +115,7 @@ export default class Home extends Component {
     const { isAnswered, selectedOption } = this.state;
     if (isAnswered) {
       if (option === answer) return { borderColor: '#00600f', color: 'white', 'background-color': '#00600f' };
+      if (option != answer && selectedOption != option)  return { borderColor: 'rgba(200, 200, 200, 1)' };
       if (selectedOption === option) return { borderColor: '#d32f2f', color: 'white', 'background-color': '#d32f2f' };
       return {};
     }
@@ -129,18 +130,9 @@ export default class Home extends Component {
     return (
       <div className = {Styles.root}>
         <span className = {Styles.heading}>
+         
           <div>
-            <a className = {Styles.whatsapp} target = "_blank" href = {`https://web.whatsapp.com/send?l=en&text=${textToShare}`}>
-              <img src = {whatsapp} alt = "Whatsapp" />
-            </a>
-          </div>
-          <div>
-            <a className = {Styles.whatsappMobile} href = {`https://wa.me/?text=${textToShare}`} data-action = "share/whatsapp/share">
-              <img src = {whatsapp} alt = "Whatsapp" />
-            </a>
-          </div>
-          <div>
-            Being aware is the first step towards being safe. It&apos;s the time to save yourself and your loved ones.
+            "Being aware is the first step towards being safe. It&apos;s the time to save yourself and your loved ones."
           </div>
         </span>
         <List />
